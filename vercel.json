@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "CONSUMER_KEY": "@consumer_key",
+    "CONSUMER_SECRET": "@consumer_secret",
+    "PASSKEY": "@passkey",
+    "CALLBACK_URL": "@callback_url",
+    "ADMIN_EMAIL": "@admin_email",
+    "ADMIN_PASSWORD": "@admin_password",
+    "ADMIN_PHONE": "@admin_phone",
+    "VERIFY_EMAIL": "@verify_email",
+    "JWT_SECRET": "@jwt_secret",
+    "SHORTCODE": "@shortcode"
+  }
+}
